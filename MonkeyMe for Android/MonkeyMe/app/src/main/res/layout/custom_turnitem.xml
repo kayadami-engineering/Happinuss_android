@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent" android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/imageView"
+        android:layout_alignParentTop="false"
+        android:layout_alignParentStart="true"
+        android:background="#ffffff"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_centerVertical="true" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="User Name"
+        android:id="@+id/UserName"
+        android:layout_toEndOf="@+id/ProfileView"
+        android:layout_marginTop="25dp"
+        android:layout_alignParentTop="true"
+        android:typeface="sans"
+        android:layout_toRightOf="@+id/imageView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Level ?"
+        android:id="@+id/Level"
+        android:layout_alignParentTop="false"
+        android:layout_alignParentEnd="false"
+        android:layout_toEndOf="@+id/ProfileView"
+        android:layout_marginBottom="25dp"
+        android:layout_alignParentBottom="false"
+        android:typeface="sans"
+        android:layout_toRightOf="@+id/imageView"
+        android:layout_below="@+id/UserName"
+        android:layout_marginTop="5dp" />
+
+    <TextView
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Medium Text"
+        android:id="@+id/textView2"
+        android:layout_alignBottom="@+id/imageView"
+        android:layout_alignEnd="@+id/UserName"
+        android:layout_alignRight="@+id/imageView"
+        android:background="@drawable/levc"
+        android:layout_alignTop="@+id/Level" />
+</RelativeLayout>
